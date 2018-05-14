@@ -1,0 +1,465 @@
+//font colors
+
+$primary-font-color: #424242;
+$font-black1: #282E3D;
+$font-white: #FFFFFF;
+$font-grey: #CBCED4;
+$font-blue: #0070BF;
+$font-promo: #F2FBFF;
+
+//button-colors 
+
+$primary-color: #FEC700;
+$shadow-primary: #E3AE0E;
+$green-shadow: #42BD83;
+$black-shadow: #262C3B;
+
+//background-colors 
+
+$white-bg: #ffffff;
+$pink-bg: #EEEFF1;
+$promo-bg: #0070BF;
+$yellow-bg: #FEC700;
+$copyright-bg: #203561;
+
+//other
+
+$n: none;
+
+$anim: all 0.5s linear;
+$anim1: all 0.2s linear;
+
+$sprite: url("../img/sprite/sprite.png") no-repeat;
+
+/*------------------
+--------colors------
+-------------------*/
+
+//цвет текста #424242
+//основной цвет #FEC700
+
+//для доступа к переменным открыть yellow.scss файл в корневой директории
+
+body {
+    color: $primary-font-color;
+}
+
+//header stilization
+
+.main-header {
+    .header-button {
+        color: $primary-font-color;
+        border: 1px solid $primary-color;
+    }
+    .header-button:hover {
+        background: $yellow-bg;
+    }
+    .mdi-city:hover::before {
+        color: $primary-font-color;
+    } 
+    .header-list_item a {
+        color: $primary-font-color;
+    }
+    
+    .header-list-second {
+        a {
+            color: $primary-font-color;
+        }
+        
+        .tagline-link {
+            color: $primary-font-color;
+        }
+    }
+}
+
+.header-button {
+    border: 1px solid $primary-color;
+}
+
+.header-list_item::before {
+    background: $primary-color;
+
+}
+
+.main-header {
+    .mdi-city::before {
+        color: $primary-color;
+    }
+}
+
+.header-slider {
+    .content-bottom_right { 
+        .slider-button{
+            border: 1px solid $primary-color;
+        }
+        .slider-button::before {
+            color: $primary-color;
+        }
+        .slider-button:hover {
+                background: $primary-color;
+                color: $primary-font-color;
+                
+                a {
+                    color: $primary-font-color;
+                }
+            }
+            
+            .slider-button:hover::before {
+                color: $primary-font-color;
+            }
+    }
+}
+
+
+//navigation stilization
+
+.main-nav_list {
+    .main-nav_item {
+        background: rgba(203,206,212,0.3);
+        
+        a {
+            color: $primary-font-color;
+        }
+    }
+    
+    .main-nav_item:hover {
+        background: $primary-color;
+    }
+}
+
+//features top/bottom stilization
+
+.features-top_list {
+    .features-top_item:not(:last-child) {
+        border-right: 1px solid rgba(112,112,112,0.4);
+    }
+    
+    .features-top_first {
+        .title::after {
+            background: rgba(112,112,112,0.1);
+        }
+    }
+    
+    .features-top_second {
+        .title::after {
+            background: rgba(112,112,112,0.1);
+        }
+    }
+    
+    .features-top_third {
+        .title::after {
+            background: rgba(112,112,112,0.1);
+        }
+    }
+    
+    .features-top_fourth {
+        .title::after {
+            background: rgba(112,112,112,0.1);
+        }
+    }
+    
+    .title {
+        color: #282E3D;
+    }
+    
+    .title::before  {
+        color: $font-blue;
+    }
+}
+
+.features-bottom_button {
+    background: rgba(227, 174, 14, 0.1);
+    border: 1px solid $primary-color;
+}
+
+.features-bottom_list {
+    .mdi-arrow-right::before {
+        color: #FEC700;
+    }
+}
+
+//location stilization
+
+.location {
+    .locsation-tagline {
+        color: $font-blue;
+    }
+}
+
+.filter-item_icon:hover {
+    background: $primary-color;
+}
+
+.activeMap {
+    background: $primary-color!important;
+}
+
+//flatoghraphy stilization
+
+.flatography-list_item {
+    border: 1px solid rgba(217, 242, 255, 0.4);
+}
+
+.flatography-button {
+    border: 1px solid $primary-color;
+}
+
+.flatography-button:hover {
+    background: $primary-color;
+}
+
+//mortgage stilization
+
+.mortgage-button {
+    color: $primary-font-color;
+    border: 2px solid $primary-color;
+    background: rgba(227, 174, 14, 0.1);
+    transition: $anim1;
+}
+
+.mortgage-button:hover {
+    background: $primary-color;
+}
+
+.buying-top {
+    .tagline-link::before{
+        background: $primary-color;
+    }
+}
+
+//slaes stilization
+
+.sales {
+    .button-content {
+        background: rgba(227, 174, 14, 0.1);
+        color: $primary-color;
+    }
+    
+    .bottom-content_description:hover .button-content {
+        background: $primary-color;
+    }
+}
+
+//architecture stilization
+
+.architecture-tagline_first {
+    color: $font-blue;
+}
+
+//promo stilization
+
+.promo {
+    color: $font-promo;
+    
+    .promo-content {
+        background: $promo-bg;
+    }
+}
+
+.promo::before {
+    background: $promo-bg;
+}
+
+.image-container::before {
+     background: rgba(255, 255, 255, 0.7);
+}
+
+//feedback stilization
+
+.feedback {
+    background: rgba(0, 112, 191, 0.1);
+    
+    .feedback-form {
+        .fedback-input {
+            color: $promo-bg;
+            border-bottom: 2px solid $promo-bg;
+        }
+        
+        .feedback-button {
+            background: $primary-color;
+        }
+    }
+}
+
+//footer stilization
+
+.footer-list_title:hover {
+    color: $primary-color;
+}
+
+.footer-bottom_wrap {
+    background: #203561;
+}
+
+//slider stilization
+
+.owl-prev {
+    background: rgba(255,255,255,0.2)!important;
+}
+
+.owl-prev:hover {
+    background: rgba(254,199,0, 0.2)!important;
+} 
+
+.owl-prev:hover::before,
+.owl-next:hover::before,
+.owl-prev:hover::after,
+.owl-next:hover::after{
+    background: $primary-color;
+}  
+
+.owl-next  {
+    background: rgba(255,255,255,0.2)!important;
+}
+
+.owl-next:hover {
+    background: rgba(254,199,0, 0.2)!important;
+}
+
+.header-slider_dots {
+    .owl-dot {
+        border: 1px solid white!important;
+    }
+    
+    .active {
+        background: $primary-color!important;
+        border: none!important;
+    }
+}
+
+.sales {
+    .owl-next {
+        background: #EEEFF1!important;
+    }
+    
+    .owl-next::before {
+        background: #9E9E9E;
+    }
+    
+    .owl-next::after {
+        background: #9E9E9E;
+    }
+    
+    .owl-prev{
+        background: #EEEFF1!important;
+    }
+    
+    .owl-prev::before {
+        background:#9E9E9E;
+    }
+    
+    .owl-prev::after {
+        background: #9E9E9E;
+    }
+    
+    .owl-next:hover,
+    .owl-prev:hover {
+        background: $primary-color!important;
+    }
+}
+
+.flatography {
+    .owl-next {
+        background: #EEEFF1!important;
+    }
+    
+    .owl-next::before {
+        background: #9E9E9E;
+    }
+    
+    .owl-next::after {
+        background: #9E9E9E;
+    }
+    
+    .owl-prev  {
+        background: #EEEFF1!important;
+    }
+    
+    .owl-prev::before {
+        background: #9E9E9E;
+    }
+    
+    .owl-prev::after {
+        background: #9E9E9E;
+    }
+    
+    .owl-next:hover,
+    .owl-prev:hover {
+        background: $primary-color!important;
+    }
+}
+
+.other {
+    .owl-next {
+       background: #EEEFF1!important;
+    }
+    
+    .owl-next::before {
+        background: #9E9E9E;
+    }
+    
+    .owl-next::after {
+        background: #9E9E9E;
+    }
+    
+    .owl-prev {
+        background: #EEEFF1!important;
+    }
+    
+    .owl-prev::before {
+        background: #9E9E9E;
+    }
+    
+    .owl-prev::after {
+         background: #9E9E9E;
+    }
+    
+    .owl-next:hover,
+    .owl-prev:hover {
+        background: $primary-color!important;
+    }
+    
+    .header-slider_dots {
+        .owl-dot {
+            border:1px solid #CBCED4!important;
+        }
+    }
+}
+
+.header-list_item:hover {
+    a {
+        color: $primary-color;
+     }
+}
+
+.tagline-link:hover {
+    animation: taglineColor 0.2s linear forwards;
+}
+
+.header-list_item {
+    .tagline-link::before {
+        background: $primary-color;
+    }
+}
+
+.tagline-link::before {
+    background: $primary-color;
+}
+
+footer .footer-top .top-list_item a {
+    transition: $anim1;
+}
+
+footer .footer-top .top-list_item:hover a {
+    color: $primary-color;
+}
+
+@keyframes taglineColor {
+    from {
+        color: $primary-font-color;
+    }
+    
+    to {
+        color: $primary-color;
+    }
+}

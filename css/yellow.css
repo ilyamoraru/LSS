@@ -1,0 +1,372 @@
+/*------------------
+--------colors------
+-------------------*/
+body {
+  color: #424242;
+}
+
+.main-header .header-button {
+  color: #424242;
+  border: 1px solid #FEC700;
+}
+
+.main-header .header-button:hover {
+  background: #FEC700;
+}
+
+.main-header .mdi-city:hover::before {
+  color: #424242;
+}
+
+.main-header .header-list_item a {
+  color: #424242;
+}
+
+.main-header .header-list-second a {
+  color: #424242;
+}
+
+.main-header .header-list-second .tagline-link {
+  color: #424242;
+}
+
+.header-button {
+  border: 1px solid #FEC700;
+}
+
+.header-list_item::before {
+  background: #FEC700;
+}
+
+.main-header .mdi-city::before {
+  color: #FEC700;
+}
+
+.header-slider .content-bottom_right .slider-button {
+  border: 1px solid #FEC700;
+}
+
+.header-slider .content-bottom_right .slider-button::before {
+  color: #FEC700;
+}
+
+.header-slider .content-bottom_right .slider-button:hover {
+  background: #FEC700;
+  color: #424242;
+}
+
+.header-slider .content-bottom_right .slider-button:hover a {
+  color: #424242;
+}
+
+.header-slider .content-bottom_right .slider-button:hover::before {
+  color: #424242;
+}
+
+.main-nav_list .main-nav_item {
+  background: rgba(203, 206, 212, 0.3);
+}
+
+.main-nav_list .main-nav_item a {
+  color: #424242;
+}
+
+.main-nav_list .main-nav_item:hover {
+  background: #FEC700;
+}
+
+.features-top_list .features-top_item:not(:last-child) {
+  border-right: 1px solid rgba(112, 112, 112, 0.4);
+}
+
+.features-top_list .features-top_first .title::after {
+  background: rgba(112, 112, 112, 0.1);
+}
+
+.features-top_list .features-top_second .title::after {
+  background: rgba(112, 112, 112, 0.1);
+}
+
+.features-top_list .features-top_third .title::after {
+  background: rgba(112, 112, 112, 0.1);
+}
+
+.features-top_list .features-top_fourth .title::after {
+  background: rgba(112, 112, 112, 0.1);
+}
+
+.features-top_list .title {
+  color: #282E3D;
+}
+
+.features-top_list .title::before {
+  color: #0070BF;
+}
+
+.features-bottom_button {
+  background: rgba(227, 174, 14, 0.1);
+  border: 1px solid #FEC700;
+}
+
+.features-bottom_list .mdi-arrow-right::before {
+  color: #FEC700;
+}
+
+.location .locsation-tagline {
+  color: #0070BF;
+}
+
+.filter-item_icon:hover {
+  background: #FEC700;
+}
+
+.activeMap {
+  background: #FEC700 !important;
+}
+
+.flatography-list_item {
+  border: 1px solid rgba(217, 242, 255, 0.4);
+}
+
+.flatography-button {
+  border: 1px solid #FEC700;
+}
+
+.flatography-button:hover {
+  background: #FEC700;
+}
+
+.mortgage-button {
+  color: #424242;
+  border: 2px solid #FEC700;
+  background: rgba(227, 174, 14, 0.1);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.mortgage-button:hover {
+  background: #FEC700;
+}
+
+.buying-top .tagline-link::before {
+  background: #FEC700;
+}
+
+.sales .button-content {
+  background: rgba(227, 174, 14, 0.1);
+  color: #FEC700;
+}
+
+.sales .bottom-content_description:hover .button-content {
+  background: #FEC700;
+}
+
+.architecture-tagline_first {
+  color: #0070BF;
+}
+
+.promo {
+  color: #F2FBFF;
+}
+
+.promo .promo-content {
+  background: #0070BF;
+}
+
+.promo::before {
+  background: #0070BF;
+}
+
+.image-container::before {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.feedback {
+  background: rgba(0, 112, 191, 0.1);
+}
+
+.feedback .feedback-form .fedback-input {
+  color: #0070BF;
+  border-bottom: 2px solid #0070BF;
+}
+
+.feedback .feedback-form .feedback-button {
+  background: #FEC700;
+}
+
+.footer-list_title:hover {
+  color: #FEC700;
+}
+
+.footer-bottom_wrap {
+  background: #203561;
+}
+
+.owl-prev {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.owl-prev:hover {
+  background: rgba(254, 199, 0, 0.2) !important;
+}
+
+.owl-prev:hover::before,
+.owl-next:hover::before,
+.owl-prev:hover::after,
+.owl-next:hover::after {
+  background: #FEC700;
+}
+
+.owl-next {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.owl-next:hover {
+  background: rgba(254, 199, 0, 0.2) !important;
+}
+
+.header-slider_dots .owl-dot {
+  border: 1px solid white !important;
+}
+
+.header-slider_dots .active {
+  background: #FEC700 !important;
+  border: none !important;
+}
+
+.sales .owl-next {
+  background: #EEEFF1 !important;
+}
+
+.sales .owl-next::before {
+  background: #9E9E9E;
+}
+
+.sales .owl-next::after {
+  background: #9E9E9E;
+}
+
+.sales .owl-prev {
+  background: #EEEFF1 !important;
+}
+
+.sales .owl-prev::before {
+  background: #9E9E9E;
+}
+
+.sales .owl-prev::after {
+  background: #9E9E9E;
+}
+
+.sales .owl-next:hover,
+.sales .owl-prev:hover {
+  background: #FEC700 !important;
+}
+
+.flatography .owl-next {
+  background: #EEEFF1 !important;
+}
+
+.flatography .owl-next::before {
+  background: #9E9E9E;
+}
+
+.flatography .owl-next::after {
+  background: #9E9E9E;
+}
+
+.flatography .owl-prev {
+  background: #EEEFF1 !important;
+}
+
+.flatography .owl-prev::before {
+  background: #9E9E9E;
+}
+
+.flatography .owl-prev::after {
+  background: #9E9E9E;
+}
+
+.flatography .owl-next:hover,
+.flatography .owl-prev:hover {
+  background: #FEC700 !important;
+}
+
+.other .owl-next {
+  background: #EEEFF1 !important;
+}
+
+.other .owl-next::before {
+  background: #9E9E9E;
+}
+
+.other .owl-next::after {
+  background: #9E9E9E;
+}
+
+.other .owl-prev {
+  background: #EEEFF1 !important;
+}
+
+.other .owl-prev::before {
+  background: #9E9E9E;
+}
+
+.other .owl-prev::after {
+  background: #9E9E9E;
+}
+
+.other .owl-next:hover,
+.other .owl-prev:hover {
+  background: #FEC700 !important;
+}
+
+.other .header-slider_dots .owl-dot {
+  border: 1px solid #CBCED4 !important;
+}
+
+.header-list_item:hover a {
+  color: #FEC700;
+}
+
+.tagline-link:hover {
+  -webkit-animation: taglineColor 0.2s linear forwards;
+          animation: taglineColor 0.2s linear forwards;
+}
+
+.header-list_item .tagline-link::before {
+  background: #FEC700;
+}
+
+.tagline-link::before {
+  background: #FEC700;
+}
+
+footer .footer-top .top-list_item a {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+footer .footer-top .top-list_item:hover a {
+  color: #FEC700;
+}
+
+@-webkit-keyframes taglineColor {
+  from {
+    color: #424242;
+  }
+  to {
+    color: #FEC700;
+  }
+}
+
+@keyframes taglineColor {
+  from {
+    color: #424242;
+  }
+  to {
+    color: #FEC700;
+  }
+}

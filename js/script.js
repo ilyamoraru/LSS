@@ -12,7 +12,7 @@ $(function() {
         loop: true,
         navText: ["",""],
         /*параметры автолистания*/
-        autoplay: true,
+        //autoplay: true,
         autoplayTimeout: 7000,
         lazyLoad: true,
         autoplaySpeed: 1500,

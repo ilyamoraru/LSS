@@ -44,6 +44,10 @@ body {
     color: $primary-font-color;
 }
 
+.button:hover {
+    box-shadow: 0 2px 0  0 #E3AE0E;
+}
+
 //header stilization
 
 .main-header {
@@ -237,6 +241,7 @@ body {
     
     .bottom-content_description:hover .button-content {
         background: $primary-color;
+        box-shadow: 0 2px 0  0 #E3AE0E;
     }
 }
 

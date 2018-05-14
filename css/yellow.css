@@ -5,6 +5,11 @@ body {
   color: #424242;
 }
 
+.button:hover {
+  -webkit-box-shadow: 0 2px 0  0 #E3AE0E;
+          box-shadow: 0 2px 0  0 #E3AE0E;
+}
+
 .main-header .header-button {
   color: #424242;
   border: 1px solid #FEC700;
@@ -160,6 +165,8 @@ body {
 
 .sales .bottom-content_description:hover .button-content {
   background: #FEC700;
+  -webkit-box-shadow: 0 2px 0  0 #E3AE0E;
+          box-shadow: 0 2px 0  0 #E3AE0E;
 }
 
 .architecture-tagline_first {

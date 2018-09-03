@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ЛСС</title>
+        <link href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
+        <link href="img/favicon-big.png" type="image/x-icon" rel="shortcut icon">
+        <link rel="apple-touch-icon" sizes="30x30" href="img/favicon.png">
+        <link rel="apple-touch-icon" sizes="240x240" href="img/favicon-big.png">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/yellow.css" rel="stylesheet">
+        <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <script src="js/jQuery-3.3.1.js"></script>
+        <script src="js/jquery-ui.min.js" type="text/jscript"></script> 
+        <script src="js/slick.js" type="text/jscript"></script>
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    </head>
+    <body>
+        <!--header-->
+        <header class="main-header container">
+                <a href="index.html" class="logo-a"><img src="img/logo/logo-a.svg" alt=""></a>
+                <a href="corpus-change.html" class="button header-button mdi mdi-city">Выбрать квартиру</a>
+                <ul class="header-list header-list-first">
+                    <li class="header-list_item"><a href="offices.html">Офис продаж</a></li>
+                    <li class="header-list_item"><a href="about-company.html">О&nbsp;застройщике</a></li>
+                </ul>
+                <ul class="header-list header-list-second">
+                    <li class="header-list_item"><a href="tel:88123800525">8&#160;(812)&#160;380-05-25</a></li>
+                    <li class="header-list_item"><a href="#" class="tagline-link call">Заказать звонок</a></li>
+                </ul>
+                <a href="http://www.etalongroup.ru/" class="logo-b"><img src="img/logo/logo-b.svg" alt="" target="_blank"></a>
+                <div class="mobile-burger"><span></span></div>
+            </header>
+        <main>
+            <section class="main-nav container sales-nav">
+                    <h2 class="visually-hidden">Навигация по сайту</h2>
+                    <ul class="main-nav_list">
+                        <li class="main-nav_item nav-first">
+                            <a href="about.html">О комплексе</a>
+                        </li>
+                        <li class="main-nav_item nav-second">
+                            <a href="how-buy.html">Как купить</a>
+                        </li>
+                        <li class="main-nav_item nav-third">
+                            <a href="sales.html">Скидки и акции</a>
+                        </li>
+                        <li class="main-nav_item nav-fourth">
+                            <a href="progress.html">Ход строительства</a>
+                        </li>
+                    </ul>
+            </section>
+            <!--конец-секции-->
+            <!--форма выбора корпуса и квартиры-->
+            <section class="selector-detal selector2 container">
+                <div class="selector-detal_first">
+                    <h1 class="page-title_blue">Выберите квартиру</h1>
+                    <a href="corpus-change.html" class="tagline-link mobile-hidden">Перейти на выбор корпуса</a>
+                </div>
+                <div class="selector-detal_second">
+                    <p class="selector-detal_content">Уточните параметры квартиры, чтобы мы&nbsp;смогли подобрать для вас оптимальные варианты планировок.</p>
+                    <a href="corpus-change.html" class="tagline-link desctop-hidden">Перейти на выбор корпуса</a>
+                    <form action="#" method="post" class="seletor-form_otdelka">
+                        <input type="checkbox" id="otdelka-radio" class="otdelka-check">
+                        <label for="otdelka-radio" class="otdelka-check_label mdi mdi-format-color-fill">Отделка<span></span></label>
+                        
+                    </form>
+                </div>                
+                <div class="selector-detal_third">
+                    <form action="#" method="post" class="selector-form">
+                        <fieldset>
+                            <!--выбор корпуса-->
+                            <legend class="form-legend">Выберите корпус</legend>
+                            <button type="button" class="form-button corpuses" id="1-corp">1</button>
+                            <label for="1-corp" class="hidden-label mobile-hidden">1&nbsp;корпус</label>
+                            <button type="button" class="form-button corpuses">2</button>
+                            <label for="2-corp" class="hidden-label mobile-hidden">2&nbsp;корпус</label>
+                            <button type="button" class="form-button corpuses">3</button>
+                            <label for="3-corp" class="hidden-label mobile-hidden">3&nbsp;корпус</label>
+                            <button type="button" class="form-button corpuses">4</button>
+                            <label for="4-corp" class="hidden-label mobile-hidden">4&nbsp;корпус</label>
+                            <button type="button" class="form-button corpuses">5</button>
+                            <label for="5-corp" class="hidden-label mobile-hidden">5&nbsp;корпус</label>
+                        </fieldset>
+                        <!--конец-секции-->
+                        <!--выбор комант-->
+                        <fieldset>
+                            <legend class="form-legend">Количество комнат:</legend>
+                            <button type="button" class="form-button rooms" id="s">С</button>
+                            <label for="c" class="hidden-label mobile-hidden">Студия</label>
+                            <button type="button" class="form-button rooms" id="1-k">1</button>
+                            <label for="1-k" class="hidden-label mobile-hidden">1-комнатная</label>
+                            <button type="button" class="form-button rooms" id="2-k">2</button>
+                            <label for="2-k" class="hidden-label rooms mobile-hidden">2-комнатная</label>
+                            <button type="button" class="form-button rooms" id="3-k">3</button>
+                            <label for="3-k" class="hidden-label rooms mobile-hidden">3-комнатная</label>
+                            <button type="button" class="form-button rooms" id="4-k">4</button>
+                            <label for="4-k" class="hidden-label mobile-hidden">4-комнатная</label>
+                            <button type="button" class="form-button active-button rooms" id="5-k">5</button>
+                            <label for="5-k" class="hidden-label mobile-hidden">5-комнатная</label>
+                        </fieldset>
+                        <!--конец-секции-->
+                        <button type="submit" class="selector-form_submit button"><a href="selector-1.html">Расширенный поиск</a></button>
+                    </form>
+                    <!--конец-секции-->
+                </div>
+                <div class="selector-detal_fourth">
+                    <h2 class="selector_subtitle">Результаты поиска</h2>
+                    <div class="sales-table_wrap">
+                        <!--таблица результатов поиска-->
+                    <table class="sales-table mobile-hidden">
+                        <tr class="first-row">
+                            <td class="first-cell"></td>
+                            <td class="first-cell">Квартира</td>
+                            <td class="first-cell">Общая, м<sup>2</sup></td>
+                            <td class="first-cell">Кухня, м<sup>2</sup></td>
+                            <td class="first-cell">Этаж</td>
+                            <td class="first-cell">Цена</td>
+                        </tr>
+                        <tr class="tagline-wrap"><td class="first-row_tagline"><a href="selector-3.html"></a></td></tr>
+                        <tr class="other-row">
+                            <td class="other-cell other-cell_img"><a href="selector-3.html"><img src="img/sales-page/flat-sales.svg" alt=""></a></td>
+                            <td class="other-cell"><a href="selector-3.html">Студия &#8470;&nbsp;45<br><span>Корпус&nbsp;8.7-2, секция&nbsp;1</span></a></td>
+                            <td class="other-cell"><a href="selector-3.html">26.72</a></td>
+                            <td class="other-cell"><a href="selector-3.html">0</a></td>
+                            <td class="other-cell"><a href="selector-3.html">7</a></td>
+                            <td class="other-cell"><a href="selector-3.html">3&nbsp;304&nbsp;243&nbsp;р.</a></td>
+                        </tr>
+                        <tr class="tagline-wrap"><td class="first-row_tagline"><a href="selector-3.html"></a></td></tr>
+                        <tr class="other-row">
+                            <td class="other-cell other-cell_img"><a href="selector-3.html"><img src="img/sales-page/flat-sales.svg" alt=""></a></td>
+                            <td class="other-cell"><a href="selector-3.html">1-комнатная &#8470;&nbsp;45<br><span>Корпус&nbsp;8.7-2, секция&nbsp;1</span></a></td>
+                            <td class="other-cell"><a href="selector-3.html">26.72</a></td>
+                            <td class="other-cell"><a href="selector-3.html">14.56</a></td>
+                            <td class="other-cell"><a href="selector-3.html">10</a></td>
+                            <td class="other-cell"><a href="selector-3.html">3&nbsp;304&nbsp;243&nbsp;р.</a></td>
+                        </tr>
+                        <tr class="tagline-wrap"><td class="first-row_tagline"><a href="selector-3.html"></a></td></tr>
+                        <tr class="other-row">
+                            <td class="other-cell other-cell_img"><a href="selector-3.html"><img src="img/sales-page/flat-sales.svg" alt=""></a></td>
+                            <td class="other-cell"><a href="selector-3.html">Студия &#8470;&nbsp;45<br><span>Корпус&nbsp;8.7-2, секция&nbsp;1</span></a></td>
+                            <td class="other-cell"><a href="selector-3.html">26.72</a></td>
+                            <td class="other-cell"><a href="selector-3.html">0</a></td>
+                            <td class="other-cell"><a href="selector-3.html">7</a></td>
+                            <td class="other-cell"><a href="selector-3.html">3&nbsp;304&nbsp;243&nbsp;р.</a></td>
+                        </tr>
+                        <tr class="tagline-wrap"><td class="first-row_tagline"><a href="selector-3.html"></a></td></tr>
+                        <tr class="other-row">
+                            <td class="other-cell other-cell_img"><a href="selector-3.html"><img src="img/sales-page/flat-sales.svg" alt=""></a></td>
+                            <td class="other-cell"><a href="selector-3.html">Студия &#8470;&nbsp;45<br><span>Корпус&nbsp;8.7-2, секция&nbsp;1</span></a></td>
+                            <td class="other-cell"><a href="selector-3.html">26.72</a></td>
+                            <td class="other-cell"><a href="selector-3.html">0</a></td>
+                            <td class="other-cell"><a href="selector-3.html">7</a></td>
+                            <td class="other-cell"><a href="selector-3.html">3&nbsp;304&nbsp;243&nbsp;р.</a></td>
+                        </tr>
+                        <tr class="tagline-wrap"><td class="first-row_tagline"><a href="selector-3.html"></a></td></tr>
+                        <tr class="other-row">
+                            <td class="other-cell other-cell_img"><a href="selector-3.html"><img src="img/sales-page/flat-sales.svg" alt=""></a></td>
+                            <td class="other-cell"><a href="selector-3.html">Студия &#8470;&nbsp;45<br><span>Корпус&nbsp;8.7-2, секция&nbsp;1</span></a></td>
+                            <td class="other-cell"><a href="selector-3.html">26.72</a></td>
+                            <td class="other-cell"><a href="selector-3.html">0</a></td>
+                            <td class="other-cell"><a href="selector-3.html">7</a></td>
+                            <td class="other-cell"><a href="selector-3.html">3&nbsp;304&nbsp;243&nbsp;р.</a></td>
+                        </tr>
+                        <tr class="tagline-wrap"><td class="first-row_tagline"><a href="selector-3.html"></a></td></tr>
+                    </table>
+                    <ul class="sales-inner_table_mobile desctop-hidden">
+                        <li class="sales-inner_table_item">
+                            <a href="selector-3.html">
+                                <div class="block1">
+                                    <img src="img/sales-page/flat-sales.svg" alt="">
+                                </div>
+                                <div class="block2">
+                                    <div class="block2-item">
+                                        <p class="item-grey">Квартира</p>
+                                        <p class="item-name">Студия&nbsp;№45</p>
+                                        <p class="item-corpus">Корпус&nbsp;8.7-2,&nbsp;секция&nbsp;1</p>
+                                    </div>
+                                    <div class="block2-item">
+                                        <p class="item-grey">Общая,&nbsp;м2</p>
+                                        <p class="item-name">26.72</p>
+                                    </div>
+                                    <div class="block2-item">
+                                        <p class="item-grey">Цена</p>
+                                        <p class="item-name">3&nbsp;304&nbsp;243&nbsp;р.</p>
+                                    </div>
+                                    <div class="item-button mdi mdi-arrow-right"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sales-inner_table_item">
+                            <a href="selector-3.html">
+                                <div class="block1">
+                                    <img src="img/sales-page/flat-sales.svg" alt="">
+                                </div>
+                                <div class="block2">
+                                    <div class="block2-item">
+                                        <p class="item-grey">Квартира</p>
+                                        <p class="item-name">Студия&nbsp;№45</p>
+                                        <p class="item-corpus">Корпус&nbsp;8.7-2,&nbsp;секция&nbsp;1</p>
+                                    </div>
+                                    <div class="block2-item">
+                                        <p class="item-grey">Общая,&nbsp;м2</p>
+                                        <p class="item-name">26.72</p>
+                                    </div>
+                                    <div class="block2-item">
+                                        <p class="item-grey">Цена</p>
+                                        <p class="item-name">3&nbsp;304&nbsp;243&nbsp;р.</p>
+                                    </div>
+                                    <div class="item-button mdi mdi-arrow-right"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sales-inner_table_item">
+                            <a href="selector-3.html">
+                                <div class="block1">
+                                    <img src="img/sales-page/flat-sales.svg" alt="">
+                                </div>
+                                <div class="block2">
+                                    <div class="block2-item">
+                                        <p class="item-grey">Квартира</p>
+                                        <p class="item-name">Студия&nbsp;№45</p>
+                                        <p class="item-corpus">Корпус&nbsp;8.7-2,&nbsp;секция&nbsp;1</p>
+                                    </div>
+                                    <div class="block2-item">
+                                        <p class="item-grey">Общая,&nbsp;м2</p>
+                                        <p class="item-name">26.72</p>
+                                    </div>
+                                    <div class="block2-item">
+                                        <p class="item-grey">Цена</p>
+                                        <p class="item-name">3&nbsp;304&nbsp;243&nbsp;р.</p>
+                                    </div>
+                                    <div class="item-button mdi mdi-arrow-right"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="tagline-link show-more">Раскрыть полный список</a>
+                        <!--конец-секции-->
+                </div>
+                </div>
+            </section>
+        </main>
+        <!--footer-->
+        <footer class="mobile-hidden">
+            <section class="footer-top container">
+                <div class="footer-top_first">
+                    <a href="javascript:void(0)" class="logo-a"><img src="img/logo/logo-a.svg" alt=""></a>
+                    <a href="tel:88123800525" class="footer-tel">8&#160;(812)&#160;380-05-25</a>
+                    <a href="#" class="tagline-link call">Заказать&#160;звонок</a>
+                </div>
+                <ul class="footer-top_second">
+                    <li class="top-list_item">
+                        <a href="about.html" class="footer-list_title">О комплексе</a> 
+                    </li>
+                    <li class="top-list_item">
+                        <a href="about.html">Архитектура</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="offices.html">Расположение</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="about.html">Инфраструктура</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="#">Преимущества</a>
+                    </li>
+                </ul>
+                <ul class="footer-top_third">
+                    <li class="top-list_item">
+                        <a href="selector-1.html" class="footer-list_title">Выбор недвижимости</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Поиск по&nbsp;параметрам</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Квартиры</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Коммерческие помещения</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Паркинг</a>
+                    </li>
+                </ul>
+                <ul class="footer-top_fourth">
+                    <li class="top-list_item">
+                        <a href="progress.html" class="footer-list_title">Ход строительства</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="broadcats.html">Онлайн-трансляция</a>
+                    </li>
+                </ul>
+                <ul class="footer-top_fifth">
+                    <li class="top-list_item">
+                        <a href="#" class="footer-list_title">Общая информация</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="how-buy.html">Условия оплаты</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="offices.html">Офисы продаж</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="about-company.html">О&nbsp;застройщике</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="documents.html">Документация</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-center container">
+                <div class="footer-center_left">
+                    <p class="copyright"><script>
+                                document.write("&copy; "+ new Date().getFullYear());
+                            </script>
+                    </p>
+                    <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-c.svg" alt=""></a>
+                    <a href="#" class="tagline-link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer-center_right">
+                    <a href="http://kdm1.ru/" target="_blank">
+                        <div>
+                            <img src="img/kdm.svg" alt="" class="f-logo">
+                        </div>
+                        <div>
+                            <p class="kdm">Сделано c любовью в <span class="kdm tagline-link">КДМ</span></p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <div class="footer-bottom_wrap">
+                <section class="footer-bottom container">
+                    <p class="footer-bottom_description">* Информация, предоставленная на сайте, не является публичной офертой. Все цены действительны на 27.02.2018, при условии 100% оплаты.</p>
+                </section>
+            </div>
+        </footer>
+        <footer class="desctop-hidden mobile-footer container">
+            <div class="mobile-menu_second">
+                <ul class="mobile-nav_second">
+                    <li class="mobile-nav_item_second"><a href="offices.html">Офисы продаж</a></li>
+                    <li class="mobile-nav_item_second"><a href="about-company.html">О застройщике</a></li>
+                    <li class="mobile-nav_item_second"><a href="corpus-change.html" class="mdi mdi-city">Выбрать квартиру</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu_third">
+                <a href="tel:88123800525" class="mobile-menu_tel ">8&nbsp;(812)&nbsp;380-05-25</a>
+                <a href="#" class="tagline-link call">Заказать звонок</a>
+            </div>
+            <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-b.svg" alt=""></a>
+            <div class="mobile-menu_fourth">
+                <a href="#" class="tagline-link politica">Политика конфиденциальности</a>
+                <p class="copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script>
+                 </p>
+                <div class="developer-wrap">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/kdm.svg" alt="" class="mobile-menu_kdm">
+                        <p class="developer-name">Сделано с любовью в <a href="http://kdm1.ru" class="tagline-link">КДМ</a></p>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu_fifth">
+                <p class="mobile-fifth_content">* Информация, предоставленная на&nbsp;сайте, не&nbsp;является публичной офертой. Все цены действительны на&nbsp;27.02.2018, при условии 100% оплаты.</p>
+            </div>
+        </footer>
+        <!--конец-секции-->
+        <!--плашка избранное-->
+        <div class="favorites">
+            <a href="selector-4.html">
+                <p class="mdi mdi-cards-heart">12</p>
+            </a>
+        </div>
+        <!--конец-секции-->
+        <!--popup "обратный звонок-->
+        <section class="main-modal container">
+            <p class="main-modal_content">
+                Оставьте свой номер телефона,<br>мы перезвоним вам в течение<br>часа
+            </p>
+            <form class="main-modal_form">
+                <input type="tel" class="modal-form_input" placeholder="Номер телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" required/>
+                <span class="error-message">Введите телефон в формате<br> +7 (123) 456-78-90</span>
+                <button type="submit" class="button modal-form_button mdi mdi-arrow-right">Заказать звонок</button>
+            </form>
+             <button type="button" class="close-popup"></button>
+        </section>
+        <!--конец-секции-->
+        <!--mobile-menu-->
+        <section class="mobile-menu">
+            <div class="mobile-menu_first">
+                <a href="index.html" class="logo-a"><img src="img/logo/logo-a.svg" alt=""></a>
+                <button type="button" class="menu-close"></button>
+            </div>
+            <div class="mobile-menu_second">
+                <ul class="mobile-nav">
+                    <li class="mobile-nav_item"><a href="about.html">О комплексе</a></li>
+                    <li class="mobile-nav_item"><a href="how-buy.html">Как купить</a></li>
+                    <li class="mobile-nav_item"><a href="sales.html">Скидки и акции</a></li>
+                    <li class="mobile-nav_item"><a href="progress.html">Ход строительства</a></li>
+                </ul>
+                <ul class="mobile-nav_second">
+                    <li class="mobile-nav_item_second"><a href="offices.html">Офисы продаж</a></li>
+                    <li class="mobile-nav_item_second"><a href="about-company.html">О застройщике</a></li>
+                    <li class="mobile-nav_item_second"><a href="documents.html">Документация</a></li>
+                    <li class="mobile-nav_item_second "><a href="corpus-change.html" class="mdi mdi-city">Выбрать квартиру</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu_third">
+                <a href="tel:88123800525" class="mobile-menu_tel">8&nbsp;(812)&nbsp;380-05-25</a>
+                <a href="#" class="tagline-link">Заказать звонок</a>
+            </div>
+            <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-b.svg" alt=""></a>
+            <div class="mobile-menu_fourth">
+                <a href="#" class="tagline-link politica">Политика конфиденциальности</a>
+                <p class="copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script>
+                 </p>
+                <div class="developer-wrap">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/kdm.svg" alt="" class="mobile-menu_kdm">
+                        <p class="developer-name">Сделано с любовью в <a href="http://kdm1.ru" class="tagline-link">КДМ</a></p>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu_fifth">
+                <p class="mobile-fifth_content">* Информация, предоставленная на&nbsp;сайте, не&nbsp;является публичной офертой. Все цены действительны на&nbsp;27.02.2018, при условии 100% оплаты.</p>
+            </div>
+        </section>
+        <!--конец плашки-->
+        <div class="modal-overlay"></div>
+    <script src="js/script.min.js"></script>
+    </body>
+</html>

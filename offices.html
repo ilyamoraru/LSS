@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ЛСС</title>
+        <link href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
+        <link href="img/favicon-big.png" type="image/x-icon" rel="shortcut icon">
+        <link rel="apple-touch-icon" sizes="30x30" href="img/favicon.png">
+        <link rel="apple-touch-icon" sizes="240x240" href="img/favicon-big.png">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/yellow.css" rel="stylesheet">
+        <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <script src="js/jQuery-3.3.1.js"></script>
+        <script src="js/jquery-ui.min.js" type="text/jscript"></script> 
+        <script src="js/slick.js" type="text/jscript"></script>
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    </head>
+    <body>
+        <!--header-->
+        <header class="main-header container">
+            <a href="index.html" class="logo-a"><img src="img/logo/logo-a.svg" alt=""></a>
+            <a href="corpus-change.html" class="button header-button mdi mdi-city">Выбрать квартиру</a>
+            <ul class="header-list header-list-first">
+                <li class="header-list_item"><a href="offices.html">Офис продаж</a></li>
+                <li class="header-list_item"><a href="about-company.html">О&nbsp;застройщике</a></li>
+            </ul>
+            <ul class="header-list header-list-second">
+                <li class="header-list_item"><a href="tel:88123800525">8&#160;(812)&#160;380-05-25</a></li>
+                <li class="header-list_item"><a href="#" class="tagline-link call">Заказать звонок</a></li>
+            </ul>
+            <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-b.svg" alt=""></a>
+            <div class="mobile-burger"><span></span></div>
+        </header>
+        <main>
+            <section class="main-nav container sales-nav">
+                    <h2 class="visually-hidden">Навигация по сайту</h2>
+                    <ul class="main-nav_list">
+                        <li class="main-nav_item nav-first">
+                            <a href="about.html">О комплексе</a>
+                        </li>
+                        <li class="main-nav_item nav-second">
+                            <a href="how-buy.html">Как купить</a>
+                        </li>
+                        <li class="main-nav_item nav-third">
+                            <a href="sales.html">Скидки и акции</a>
+                        </li>
+                        <li class="main-nav_item nav-fourth">
+                            <a href="progress.html">Ход строительства</a>
+                        </li>
+                    </ul>
+            </section>
+            <!--конец header-->
+            <section class="offices container">
+                <!--секция с картой-->
+                <div class="offices-first  container">
+                    <h1 class="offices-title">Офисы продаж</h1>
+                    <ul class="offices-breadcrumbs mobile-hidden">
+                        <li class="offices-breadscrumbs_item"><a href="#" class="tagline-link this-breadscrumbs">Санкт-Петербург</a></li>
+                        <li class="offices-breadscrumbs_item"><a href="#" class="tagline-link">Москва</a></li>
+                        <li class="offices-breadscrumbs_item"><a href="#" class="tagline-link">Региональные&#160;представительства</a></li>
+                    </ul>
+                    <form action="#" class="desctop-hidden">
+                        <select name="city" id="city">
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="msk">Москва</option>
+                            <option value="other-regions">Региональные&nbsp;представительства</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="offices-second  container">
+                    <div class="offices-second_left">
+                        <div id="map1" class="offices-map">
+                            <img src="img/offices/image_2018-04-16_16-37-56.png" alt="">
+                            <a href="#" class="button route-button mdi mdi-map-marker desctop-hidden-important">Проложить маршрут</a>
+                        </div>
+                    </div>
+                    <div class="offices-second_right">
+                        <div class="second-right_top">
+                            <h3 class="second-right_title">Наб.&nbsp;р. Смоленки, д. 3/1</h3>
+                            <a href="#" class="tagline-link mobile-hidden">Показать&nbsp;на&nbsp;карте</a>
+                        </div>
+                        <a href="tel:88123800525" class="tel">+7&nbsp;(812)&nbsp;385-05-25</a>
+                        <p class="second-right_content">м. &laquo;Василеостровская&raquo; или &laquo;Спортивная&raquo;</p>
+                        <a href="#" class="tagline-link desctop-hidden">Показать&nbsp;на&nbsp;карте</a>
+                        <h4 class="second-right_subtitle">График работы отдела продаж:</h4>
+                        <ul class="work-graph">
+                            <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00 (обед: 13:00-14:00)</li>
+                            <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                        </ul>
+                        <h4 class="second-right_subtitle">График работы колл-центра:</h4>
+                        <ul class="work-graph">
+                            <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                            <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                        </ul>
+                        <a href="#" class="button route-button mdi mdi-map-marker mobile-hidden">Проложить маршрут</a>
+                    </div>
+                    <!--конец секции-->
+                </div>
+                <!--секция офисы продаж-->
+                <div class="offices-third  container">
+                    <h2 class="offices-title">Офисы продаж компании &laquo;Эталон ЛенСпецСМУ&raquo;</h2>
+                    <ul class="offices-third_list">
+                        <li class="offices-third_item">
+                            <div class="offices-third_top">
+                                <h3 class="offices-adress">Невский&nbsp;пр., д.&nbsp;180</h3>
+                                <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            </div>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">м. &laquo;Площадь Ал. Невского&raquo;</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: 9:00&nbsp;&mdash; 20:00</li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 19:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <div class="offices-third_top">
+                                <h3 class="offices-adress">Московский&nbsp;пр., д.&nbsp;115</h3>
+                                <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            </div>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">м. &laquo;Московсие ворота&raquo;</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 19:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <div class="offices-third_top">
+                                <h3 class="offices-adress">Наб.&nbsp;р. Смоленки, д. 3/1</h3>
+                                <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            </div>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">м. &laquo;Василеостровская&raquo;<br>
+                            или &laquo;Спортивная&raquo;</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <div class="offices-third_top">
+                                <h3 class="offices-adress">Богатырский&nbsp;пр., д.&nbsp;2</h3>
+                                <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            </div>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">м. &laquo;Пионерская&raquo;<br>
+                            или &laquo;Спортивная&raquo;</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: 8:00&nbsp;&mdash; 20:00</li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 19:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--конец секции-->
+                <!--секция офисы продаж на объектах-->
+                <div class="offices-fourth  container mobile-hidden">
+                    <h2 class="offices-title">Офисы продаж на объектах</h2>
+                    <ul class="offices-third_list">
+                        <li class="offices-third_item">
+                            <h3 class="offices-adress">ЖК&nbsp;&laquo;Царская столица&raquo;</h3>
+                            <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">г.Санкт-Петербург,<br>Полтавский проезд, д.2</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <h3 class="offices-adress">ЖК&nbsp;&laquo;Ласточкино гнездо&raquo;</h3>
+                            <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">г.Санкт-Петербург,<br>Русановская ул., д.17, корп.2</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <h3 class="offices-adress">ЖК&nbsp;&laquo;Дом на Блюхера&raquo;</h3>
+                            <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">г.Санкт-Петербург,<br>Кушелевская дорога, д.8, корп.2</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <h3 class="offices-adress">ЖК BOTANICA</h3>
+                            <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">г.Санкт-Петербург, Аптекарская<br>наб., д.&nbsp;12, БЦ&nbsp;&laquo;Кантемировский&raquo;,<br> пом.&nbsp;3,1
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="tagline-link tagline-link_center">Раскрыть полный список</a>
+                </div>
+                <!--конец секции-->
+                <!--секция запись на просмотр-->
+                <div class="offices-fifth  container">
+                    <h2 class="offices-title">Запись на просмотры квартир на объектах</h2>
+                    <ul class="offices-third_list">
+                        <li class="offices-third_item">
+                            <h3 class="offices-adress">ЖК&nbsp;&laquo;Царская столица&raquo;</h3>
+                            <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">г.Санкт-Петербург,<br>Полтавский проезд, д.2</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                        <li class="offices-third_item">
+                            <h3 class="offices-adress">ЖК&nbsp;&laquo;Ласточкино гнездо&raquo;</h3>
+                            <a href="#" class="tagline-link">Посмотреть&nbsp;на&nbsp;карте</a>
+                            <h4 class="offices-item_bold"><a href="tel:88123800525">+7&nbsp;(812)&nbsp;380-05-25</a></h4>
+                            <p class="offices-item_reg">г.Санкт-Петербург,<br>Русановская ул., д.17, корп.2</p>
+                            <h4 class="offices-item_bold">График работы отдела продаж:</h4>
+                            <ul class="work-graph work-graph_marginSmall">
+                                <li class="work-graph_item">Пн-Пт: 10:00&nbsp;&mdash; 19:00<br><span class="small">(обед: 13:00-14:00)</span></li>
+                                <li class="work-graph_item">Сб-Вс: 10:00&nbsp;&mdash; 18:00</li>
+                            </ul>
+                            <h4 class="offices-item_bold">График работы колл-центра:</h4>
+                            <ul class="work-graph">
+                                <li class="work-graph_item">Пн-Пт: с&nbsp;8:00 до&nbsp;21:00</li>
+                                <li class="work-graph_item">Сб-Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+                            </ul>
+                            <div class="offices-img-cont">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="">
+                                <img src="img/offices/66d01cfaf58688f1ac01f213130d9024.png" alt="" class="offices-img-cont_blur">
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="tagline-link tagline-link_center desctop-hidden">Раскрыть полный список</a>
+                </div>
+                <!--конец секции-->
+            </section>
+        </main>
+        <!--footer-->
+        <footer class="mobile-hidden">
+            <section class="footer-top container">
+                <div class="footer-top_first">
+                    <a href="javascript:void(0)" class="logo-a"><img src="img/logo/logo-a.svg" alt=""></a>
+                    <a href="tel:88123800525" class="footer-tel">8&#160;(812)&#160;380-05-25</a>
+                    <a href="#" class="tagline-link call">Заказать&#160;звонок</a>
+                </div>
+                <ul class="footer-top_second">
+                    <li class="top-list_item">
+                        <a href="about.html" class="footer-list_title">О комплексе</a> 
+                    </li>
+                    <li class="top-list_item">
+                        <a href="about.html">Архитектура</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="offices.html">Расположение</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="about.html">Инфраструктура</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="#">Преимущества</a>
+                    </li>
+                </ul>
+                <ul class="footer-top_third">
+                    <li class="top-list_item">
+                        <a href="selector-1.html" class="footer-list_title">Выбор недвижимости</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Поиск по&nbsp;параметрам</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Квартиры</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Коммерческие помещения</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="selector-2.html">Паркинг</a>
+                    </li>
+                </ul>
+                <ul class="footer-top_fourth">
+                    <li class="top-list_item">
+                        <a href="progress.html" class="footer-list_title">Ход строительства</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="broadcats.html">Онлайн-трансляция</a>
+                    </li>
+                </ul>
+                <ul class="footer-top_fifth">
+                    <li class="top-list_item">
+                        <a href="#" class="footer-list_title">Общая информация</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="how-buy.html">Условия оплаты</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="offices.html">Офисы продаж</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="about-company.html">О&nbsp;застройщике</a>
+                    </li>
+                    <li class="top-list_item">
+                        <a href="documents.html">Документация</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-center container">
+                <div class="footer-center_left">
+                    <p class="copyright"><script>
+                                document.write("&copy; "+ new Date().getFullYear());
+                            </script>
+                    </p>
+                    <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-c.svg" alt=""></a>
+                    <a href="#" class="tagline-link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer-center_right">
+                    <a href="http://kdm1.ru/" target="_blank">
+                        <div>
+                            <img src="img/kdm.svg" alt="" class="f-logo">
+                        </div>
+                        <div>
+                            <p class="kdm">Сделано c любовью в <span class="kdm tagline-link">КДМ</span></p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <div class="footer-bottom_wrap">
+                <section class="footer-bottom container">
+                    <p class="footer-bottom_description">* Информация, предоставленная на сайте, не является публичной офертой. Все цены действительны на 27.02.2018, при условии 100% оплаты.</p>
+                </section>
+            </div>
+        </footer>
+        <footer class="desctop-hidden mobile-footer container">
+            <div class="mobile-menu_second">
+                <ul class="mobile-nav_second">
+                    <li class="mobile-nav_item_second"><a href="offices.html">Офисы продаж</a></li>
+                    <li class="mobile-nav_item_second"><a href="about-company.html">О застройщике</a></li>
+                    <li class="mobile-nav_item_second"><a href="corpus-change.html" class="mdi mdi-city">Выбрать квартиру</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu_third">
+                <a href="tel:88123800525" class="mobile-menu_tel ">8&nbsp;(812)&nbsp;380-05-25</a>
+                <a href="#" class="tagline-link call">Заказать звонок</a>
+            </div>
+            <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-b.svg" alt=""></a>
+            <div class="mobile-menu_fourth">
+                <a href="#" class="tagline-link politica">Политика конфиденциальности</a>
+                <p class="copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script>
+                 </p>
+                <div class="developer-wrap">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/kdm.svg" alt="" class="mobile-menu_kdm">
+                        <p class="developer-name">Сделано с любовью в <a href="http://kdm1.ru" class="tagline-link">КДМ</a></p>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu_fifth">
+                <p class="mobile-fifth_content">* Информация, предоставленная на&nbsp;сайте, не&nbsp;является публичной офертой. Все цены действительны на&nbsp;27.02.2018, при условии 100% оплаты.</p>
+            </div>
+        </footer>
+        <!--конец footer-->
+        <!--popup-подсказка как добраться-->
+        <section class="offices-modal_hint container">
+            <p class="modal-hint_content">Думаете, как добраться?<br>Мы поможем сориентироваться!</p>
+            <a href="#" class="button route-button mdi mdi-map-marker">Проложить маршрут</a>
+            <button type="button" class="close-popup"></button>
+        </section>
+        <!--конец popup-->
+        <!--popup с картой-->
+        <section class="offices-modal_map container">
+            <div class="modal-map_cont" id="#map3">
+                <img src="img/offices/map/image_2018-04-16_16-37-56.png" alt="">
+            </div>
+            <ul class="modal-map_list">
+                <li class="modal-map_item">
+                    <a href="#" class="modal-map_button" target="_blank">Открыть в Яндекс Навигаторе</a>
+                </li>
+                <li class="modal-map_item">
+                    <a href="#" class="modal-map_button" target="_blank">Смотреть на Яндекс.Картах</a>
+                </li>
+                <li class="modal-map_item">
+                    <a href="#" class="modal-map_button" target="_blank">Открыть в Google Maps</a>
+                </li>
+                <li class="modal-map_item">
+                    <a href="#" class="modal-map_button" target="_blank">Смотреть на Google.Картах</a>
+                </li>
+            </ul>
+            <button type="button" class="close-popup"></button>
+        </section>
+        <!--конец секции-->
+        <!--popup "обратный звонок-->
+        <section class="main-modal container">
+            <p class="main-modal_content">
+                Оставьте свой номер телефона,<br>мы перезвоним вам в течение<br>часа
+            </p>
+            <form class="main-modal_form">
+                <input type="tel" class="modal-form_input" placeholder="Номер телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" required/>
+                <span class="error-message">Введите телефон в формате<br> +7 (123) 456-78-90</span>
+                <button type="submit" class="button modal-form_button mdi mdi-arrow-right">Заказать звонок</button>
+            </form>
+             <button type="button" class="close-popup"></button>
+        </section>
+        <!--конец секции-->
+        <!--плашка избранное-->
+        <div class="modal-overlay"></div>
+        <div class="favorites">
+            <a href="selector-4.html">
+                <p class="mdi mdi-cards-heart">12</p>
+            </a>
+        </div>
+        <!--конец секции-->
+        <!--mobile-menu-->
+        <section class="mobile-menu">
+            <div class="mobile-menu_first">
+                <a href="index.html" class="logo-a"><img src="img/logo/logo-a.svg" alt=""></a>
+                <button type="button" class="menu-close"></button>
+            </div>
+            <div class="mobile-menu_second">
+                <ul class="mobile-nav">
+                    <li class="mobile-nav_item"><a href="about.html">О комплексе</a></li>
+                    <li class="mobile-nav_item"><a href="how-buy.html">Как купить</a></li>
+                    <li class="mobile-nav_item"><a href="sales.html">Скидки и акции</a></li>
+                    <li class="mobile-nav_item"><a href="progress.html">Ход строительства</a></li>
+                </ul>
+                <ul class="mobile-nav_second">
+                    <li class="mobile-nav_item_second"><a href="offices.html">Офисы продаж</a></li>
+                    <li class="mobile-nav_item_second"><a href="about-company.html">О застройщике</a></li>
+                    <li class="mobile-nav_item_second"><a href="documents.html">Документация</a></li>
+                    <li class="mobile-nav_item_second "><a href="corpus-change.html" class="mdi mdi-city">Выбрать квартиру</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu_third">
+                <a href="tel:88123800525" class="mobile-menu_tel">8&nbsp;(812)&nbsp;380-05-25</a>
+                <a href="#" class="tagline-link">Заказать звонок</a>
+            </div>
+            <a href="http://www.etalongroup.ru/" class="logo-b" target="_blank"><img src="img/logo/logo-b.svg" alt=""></a>
+            <div class="mobile-menu_fourth">
+                <a href="#" class="tagline-link politica">Политика конфиденциальности</a>
+                <p class="copyright">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script>
+                 </p>
+                <div class="developer-wrap">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/kdm.svg" alt="" class="mobile-menu_kdm">
+                        <p class="developer-name">Сделано с любовью в <a href="http://kdm1.ru" class="tagline-link">КДМ</a></p>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu_fifth">
+                <p class="mobile-fifth_content">* Информация, предоставленная на&nbsp;сайте, не&nbsp;является публичной офертой. Все цены действительны на&nbsp;27.02.2018, при условии 100% оплаты.</p>
+            </div>
+        </section>
+        <!--конец плашки-->
+    <script src="js/script.min.js"></script>
+    </body>
+</html>

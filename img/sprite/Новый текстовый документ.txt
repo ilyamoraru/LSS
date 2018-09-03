@@ -1,6 +1,6 @@
-.sprite {display: inline-block; vertical-align: middle;}
-.sprite {background-image: url(sprites/2e340ae00aa4def97f85f10d8e57b133.png); background-position: left center; background-repeat: no-repeat;}
-.sprite.Group_120_png {background-position: 0 0; width: 64px; height: 64px;}
-.sprite.Group_129_png {background-position: -84px 0; width: 64px; height: 60px;}
-.sprite.Group_133_png {background-position: -168px 0; width: 64px; height: 64px;}
-.sprite.Group_136_png {background-position: -252px 0; width: 64px; height: 64px;}
+.sprite {display: inline-block; vertical-align: middle;}
+.sprite {background-image: url(sprites/2e340ae00aa4def97f85f10d8e57b133.png); background-position: left center; background-repeat: no-repeat;}
+.sprite.Group_120_png {background-position: 0 0; width: 64px; height: 64px;}
+.sprite.Group_129_png {background-position: -84px 0; width: 64px; height: 60px;}
+.sprite.Group_133_png {background-position: -168px 0; width: 64px; height: 64px;}
+.sprite.Group_136_png {background-position: -252px 0; width: 64px; height: 64px;}

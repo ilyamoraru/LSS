@@ -1,22 +1,39 @@
-//font colors
+//colors
 
 $primary-font-color: #424242;
+$font-blue: #0070BF;
 $font-black1: #282E3D;
 $font-white: #FFFFFF;
 $font-grey: #CBCED4;
-$font-blue: #0070BF;
 $font-promo: #F2FBFF;
 
-//button-colors 
-
 $primary-color: #FEC700;
+$primary-color1: #C99a0c;
+
+$primary-color-lighten: #ffeeb3;
+$primary-color-lighten1: #fff9e6;
+
+$primary-rgba: rgba(227,174,14,0.1);
+$primary-rgba1: rgba(227,174,14,0.7);
+$primary-rgba2: rgba(254,199,0, 0.2);
+$primary-rgba3: rgba(254,199,0,0.1);
+$primary-rgba4: rgba(254,199,0,0.5);
+$primary-rgba5: rgba(254,199,0,0.6);
+$primary-rgba6: rgba(254,199,0,0.3);
+$primary-rgba7: rgba(254,199,0,0.7);
+
 $shadow-primary: #E3AE0E;
-$green-shadow: #42BD83;
-$black-shadow: #262C3B;
+$nav-bg: #9e9e9e;
 
-//background-colors 
+$grey-shadow: rgba(112,112,112,0.4);
+$grey-shadow1: rgba(112,112,112,0.1);
 
-$white-bg: #ffffff;
+
+
+$feedback-bg: rgba(0,112,191,0.1);
+$feedback-bg1: rgba(0,112,191,0.4);
+
+
 $pink-bg: #EEEFF1;
 $promo-bg: #0070BF;
 $yellow-bg: #FEC700;
@@ -95,9 +112,15 @@ body {
     .content-bottom_right { 
         .slider-button{
             border: 1px solid $primary-color;
+            background: $primary-color;
+            color: $font-black1;
+            
+            a {
+                color: $font-black1;
+            }
         }
         .slider-button::before {
-            color: $primary-color;
+            color: $font-black1;
         }
         .slider-button:hover {
                 background: $primary-color;
@@ -119,7 +142,7 @@ body {
 
 .main-nav_list {
     .main-nav_item {
-        background: rgba(203,206,212,0.3);
+        background: #eff0f2;
         
         a {
             color: $primary-font-color;
@@ -239,9 +262,10 @@ body {
         color: $primary-color;
     }
     
-    .bottom-content_description:hover .button-content {
-        background: $primary-color;
+    .sales-bottom_content:hover .button-content {
+        background: #FEC700;
         box-shadow: 0 2px 0  0 #E3AE0E;
+        color: white;
     }
 }
 
@@ -298,31 +322,31 @@ body {
 
 //slider stilization
 
-.owl-prev {
+.slick-prev {
     background: rgba(255,255,255,0.2)!important;
 }
 
-.owl-prev:hover {
+.slick-prev:hover {
     background: rgba(254,199,0, 0.2)!important;
 } 
 
-.owl-prev:hover::before,
-.owl-next:hover::before,
-.owl-prev:hover::after,
-.owl-next:hover::after{
+.slick-prev:hover::before,
+.slick-next:hover::before,
+.slick-prev:hover::after,
+.slick-next:hover::after{
     background: $primary-color;
 }  
 
-.owl-next  {
+.slick-next  {
     background: rgba(255,255,255,0.2)!important;
 }
 
-.owl-next:hover {
+.slick-next:hover {
     background: rgba(254,199,0, 0.2)!important;
 }
 
-.header-slider_dots {
-    .owl-dot {
+.slick-dots {
+    .slick-dot {
         border: 1px solid white!important;
     }
     
@@ -333,23 +357,23 @@ body {
 }
 
 .sales {
-    .owl-next {
+    .slick-next {
         background: #EEEFF1!important;
     }
     
-    .owl-next::before {
+    .slick-next::before {
         background: #9E9E9E;
     }
     
-    .owl-next::after {
+    .slick-next::after {
         background: #9E9E9E;
     }
     
-    .owl-prev{
+    .slick-prev{
         background: #EEEFF1!important;
     }
     
-    .owl-prev::before {
+    .slick-prev::before {
         background:#9E9E9E;
     }
     
@@ -357,75 +381,75 @@ body {
         background: #9E9E9E;
     }
     
-    .owl-next:hover,
-    .owl-prev:hover {
+    .slick-next:hover,
+    .slick-prev:hover {
         background: $primary-color!important;
     }
 }
 
 .flatography {
-    .owl-next {
+    .slick-next {
         background: #EEEFF1!important;
     }
     
-    .owl-next::before {
+    .slick-next::before {
         background: #9E9E9E;
     }
     
-    .owl-next::after {
+    .slick-next::after {
         background: #9E9E9E;
     }
     
-    .owl-prev  {
+    .slick-prev  {
         background: #EEEFF1!important;
     }
     
-    .owl-prev::before {
+    .slick-prev::before {
         background: #9E9E9E;
     }
     
-    .owl-prev::after {
+    .slick-prev::after {
         background: #9E9E9E;
     }
     
-    .owl-next:hover,
-    .owl-prev:hover {
+    .slick-next:hover,
+    .slick-prev:hover {
         background: $primary-color!important;
     }
 }
 
 .other {
-    .owl-next {
+    .slick-next {
        background: #EEEFF1!important;
     }
     
-    .owl-next::before {
+    .slick-next::before {
         background: #9E9E9E;
     }
     
-    .owl-next::after {
+    .slick-next::after {
         background: #9E9E9E;
     }
     
-    .owl-prev {
+    .slick-prev {
         background: #EEEFF1!important;
     }
     
-    .owl-prev::before {
+    .slick-prev::before {
         background: #9E9E9E;
     }
     
-    .owl-prev::after {
+    .slick-prev::after {
          background: #9E9E9E;
     }
     
-    .owl-next:hover,
-    .owl-prev:hover {
+    .slick-next:hover,
+    .slick-prev:hover {
         background: $primary-color!important;
     }
     
-    .header-slider_dots {
-        .owl-dot {
+    .slick-dots {
+        .slick-dot {
             border:1px solid #CBCED4!important;
         }
     }
@@ -451,12 +475,18 @@ body {
     background: $primary-color;
 }
 
+//footer stilization
+
 footer .footer-top .top-list_item a {
     transition: $anim1;
 }
 
 footer .footer-top .top-list_item:hover a {
     color: $primary-color;
+}
+
+footer .footer-top .footer-tel:hover {
+   color: $primary-color;
 }
 
 @keyframes taglineColor {
@@ -466,5 +496,460 @@ footer .footer-top .top-list_item:hover a {
     
     to {
         color: $primary-color;
+    }
+}
+
+
+.error-message {
+    color: red;
+}
+
+.fedback-input:valid:not(:placeholder-shown) {
+    border-color: $promo-bg;
+}
+
+.fedback-input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+.this-page_nav {
+    background: white!important;
+    border: 1px solid $primary-color;
+    
+    &:hover {
+        a {
+            color: $primary-font-color!important;
+        }
+    } 
+}
+
+.page-title_blue {
+    color: $font-blue;
+}
+
+.favorites {
+    background: $primary-color;
+    
+    .mdi-cards-heart {
+        color: $font-black1;
+    }
+}
+
+.header-slider_wrap {
+    background-color: $primary-font-color;
+    background: $primary-font-color;
+}
+
+.other .image-container {
+    background: $primary-rgba1;
+}
+
+footer {
+    .footer-top {
+        border-top: 2px solid $pink-bg;
+        border-bottom: 2px solid $pink-bg;
+    }
+}
+
+.tech-wrap_top {
+    background: $promo-bg;
+}
+
+.buyP-ipoteca {
+    .buyP-ipoteca_left {
+        .page-title {
+            color: $font-blue;
+        }
+    }
+}
+
+.buyP-description_first {
+    .first-left_inner {
+        border-top: 2px solid $font-blue;
+        border-bottom: 2px solid $font-blue;
+    }
+}
+
+.buyP-description_second {
+    .tagline-link::before  {
+        background: $primary-color;
+    }
+}
+
+.buyP-description_third {
+    .buyP-description_third_right {
+        background: linear-gradient(to left, #0078CE,#008AEB);
+        box-shadow: 0 10px 20px 0 $feedback-bg1;
+    }
+    
+    .desc-tel {
+        
+        &::before {
+            background: $primary-color;
+        }
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.popup-container {
+    .popup_item {
+        
+        &::before {
+            background: $font-blue;
+        }
+    }
+}
+
+.close-popup {
+    background: $primary-color;
+    
+    &:hover {
+        box-shadow: 0 2px 0 0 $shadow-primary;
+    }
+}
+
+.salesP {
+    .sales-show-more {
+        background: $primary-rgba3;
+        border: 2px solid $primary-color;
+    }
+    
+    .button-content {
+         background: $primary-rgba;
+        color: $primary-color;
+    }
+    
+    .sales-bottom_content:hover {
+        .button-content {
+            background: $primary-color;
+             color: white;
+             box-shadow: 0 2px 0 0 $shadow-primary;
+        }
+    }
+}
+
+.progressP {
+    .translation-button {
+        background: $primary-color;
+    }
+    
+    .image-container {
+        background: $primary-rgba1;
+    }
+    
+    .show-more_button {
+        background: $primary-rgba3;
+        border: 2px solid $primary-color;
+        
+        &:hover {
+            background: $primary-color;
+        }
+    }
+}
+
+.sales-inner {
+    .show-more {
+        &::before {
+            background: $primary-color;
+        }
+    }
+}
+
+.onlineP {
+    .camera-item {
+        ::before {
+            background: $primary-color;
+        }
+    }
+}
+
+.about-companyP {
+    .left-content_item, .left-content_small {
+        color: $font-blue;
+    }
+    
+    .right-content_item {
+        a {
+            &::before {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.corpus-select .corpus-interactive .corpus-desc {
+    box-shadow: 0 2px 0 0 $font-grey,
+                0 15px 35px 0 $primary-rgba4;
+}
+
+.corpus-select .corpus-interactive .corpus-desc .corpus-price {
+    border-bottom: $primary-color;
+}
+
+.corpus-select .corpus-paginator_item {
+    background: $primary-rgba3;
+    
+    a {
+        border: 1px solid $primary-color;
+        
+        &:hover {
+            background: $primary-color;
+            box-shadow: 0 2px 0 0 $shadow-primary;
+        }
+        
+        
+    }
+    .active-corpus {
+            background: $primary-color;
+            box-shadow: 0 2px 0 0 $shadow-primary;
+        }
+}
+
+.corpus-select .selector-buttom {
+    background: $primary-color;
+}
+
+.selector-detal {
+    .tagline-link {
+        &::before {
+            background: $primary-color;
+        }
+    }
+    
+    .otdelka-check:checked + .otdelka-check_label {
+        &::after {
+             background: $primary-rgba5;
+        }
+        
+        span {
+            background: $primary-color;
+            
+            &::before {
+                background: $primary-color1;
+            }
+            
+            &::after {
+                background: $primary-color1;
+            }
+        }
+    }
+    
+    .selector-form_submit {
+        background: $primary-rgba3;
+        border: 1px solid $primary-color;
+        
+        &:hover {
+            background: $primary-color;
+        }
+    }
+    
+    .selector-form {
+        .form-button {
+            background: $primary-rgba;
+            border: 1px solid $primary-color;
+            
+            &:hover {
+                background: white;
+                color: $primary-color;
+            }
+        }
+    }
+    
+    .active-button {
+        background: $primary-color!important;
+        color: white!important;
+        box-shadow: 0 2px 0 0 $shadow-primary;
+    }
+    
+    .range-fieldset {
+        .sliderValue {
+            &:focus {
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+        
+        .slider-wrap:hover {
+            background: $primary-rgba6;
+            
+            .ui-state-default {
+                background: $primary-color;
+                border: 1px solid $primary-color;
+                
+                &:active {
+                    background: white;
+                    height: 12px;
+                    width: 12px;
+                    border: 2px solid $primary-color;
+                    }
+            }
+            
+            .ui-slider-range {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.selector-table {
+    .other-cell_button {
+        .heart-cell {
+            &:hover {
+                background: $primary-color;
+            }
+        }
+        
+        .delete-cell {
+            &:hover {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.selector-center  {
+    .paramet_item_blue {
+        color: $font-blue;
+    }
+    
+    .mdi-format-color-fill {
+        color: $font-blue;
+        
+        &::before {
+            color: $font-blue;
+        }
+    }
+    
+    .view-button {
+        &:hover {
+            background: $primary-rgba3;
+            border: 1px solid $primary-color;
+        }
+        
+        &:active {
+            background: $primary-color;
+            color: white;
+        }
+    }
+    
+    .view-active {
+        background: $primary-color;
+        color: white;
+        
+        &:hover {
+            background: $primary-color;
+            border: none;
+        }
+    }
+    
+    .bottom-right_button {
+        a {
+            &:hover {
+                background: $primary-color;
+            }
+        }
+    }
+    
+    .right-button_first, .right-button_second {
+        background: $primary-color;
+    }
+    
+    .mdi-cards-heart {
+        &::before {
+            color: $primary-color;
+        }
+    }
+}
+
+.offices {
+    .offices-breadcrumbs {
+        
+        a {
+            &::before {
+                background: $primary-color;
+            }
+        }
+    }
+    
+    .offices-second_right {
+        .tel {
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    
+    .second-right_top {
+        .tagline-link {
+            &::before {
+                background: $primary-color;
+            }
+        }
+    }
+    
+    .mdi-map-marker {
+        background: $primary-color;
+    }
+    
+    .offices-item_bold a {
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    
+    .offices-third_item {
+        .tagline-link {
+            &::before {
+                background: $primary-color;
+            }
+        }
+    }
+    
+    .offices-fourth,
+    .offices-fifth {
+        .tagline-link_center {
+            &::before {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.offices-modal_hint {
+    .route-button {
+        background: $primary-color;
+    }
+    
+    .modal-map_button {
+        &:hover {
+            &:hover {
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+.offices-modal_map .modal-map_button:hover {
+    background: $primary-color;
+}
+
+.selector-center .right-button_first, .selector-center .right-button_first {
+    background: $primary-color;
+}
+
+ .selector-center .right-button_second {
+    background: white;
+     border: 1px solid $primary-color;
+}
+
+@media screen and (max-width: 414px) {
+    .features-top_list .features-top_item:not(:last-child) {
+        border-right: none;
+    }
+    
+    .activeMap {
+        background: rgba(254,199,0,0.5)!important;
     }
 }
